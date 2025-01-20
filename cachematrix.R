@@ -2,6 +2,7 @@
 ## functions do
 
 ## Write a short comment describing this function
+# this function caches the matrix 
 
 makeCacheMatrix <- function(x = matrix()) {
   m <- NULL
@@ -35,3 +36,10 @@ cacheSolve <- function(x, ...) {
   m
 }      ### Return a matrix that is the inverse of 'x'
 
+# making matrix
+x <- rbind(c(2,0), c(0,2))
+
+makeCacheMatrix(x)
+
+# return the inverse of 'x'
+cacheSolve(makeCacheMatrix(x))
